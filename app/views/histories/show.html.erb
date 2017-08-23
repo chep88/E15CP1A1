@@ -11,7 +11,7 @@
         <div class="col-md-2"></div>
         <div class="col-md-8">
           <h1><%= @history.title %></h1>
-          <small><%= time_ago_in_words(@history.created_at) %> ago</small>
+          <small><%= time_ago_in_words(@history.created_at) %> ago, Created by <%= current_user.name %></small>
         </div>
         <div class="col-md-2"></div>
       </div>
@@ -34,6 +34,3 @@
       </div>
 
 </div>
-
-
-
